@@ -5,14 +5,14 @@ from llama_hub.youtube_transcript import YoutubeTranscriptReader
 
 st.title("ChatGPT-like clone")
 
-# Set OpenAI API key from Streamlit secrets
-openai.api_key = "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"
+# Retrieve OpenAI API key from Streamlit secrets
+openai.api_key = st.secrets["OPENAI_API_KEY"]
+
+if "openai_model" not in st.session_state:
+    st.session_state["openai_model"] = "gpt-3.5-turbo"
 
 # Load data and create index (replace this with your actual code)
 loader = YoutubeTranscriptReader()
-
-# Accept user input for YouTube link
-yt_link = st.text_input("Enter YouTube link:")
 
 # Initialize chat history
 if "messages" not in st.session_state:
@@ -20,18 +20,19 @@ if "messages" not in st.session_state:
 
 # Display chat messages from history on app rerun
 for message in st.session_state.messages:
-    with st.empty():
-        with st.chat_message(message["role"]):
-            st.markdown(message["content"])
+    with st.chat_message(message["role"]):
+        st.markdown(message["content"])
 
 # Accept user input
+yt_link = st.text_input("Enter YouTube link:")
 if yt_link:
     documents = loader.load_data(ytlinks=[yt_link])
     index = GPTVectorStoreIndex(documents)
     query_engine = index.as_query_engine()
 
     # User input
-    if prompt := st.text_input("You:", key="user_input"):
+    prompt = st.chat_input("You:", key="user_input")
+    if prompt:
         # Add user message to chat history
         st.session_state.messages.append({"role": "user", "content": prompt})
         # Display user message in chat message container
