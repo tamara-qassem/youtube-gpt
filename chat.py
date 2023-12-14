@@ -14,6 +14,8 @@ if "openai_model" not in st.session_state:
 # Load data and create index (replace this with your actual code)
 loader = YoutubeTranscriptReader()
 
+yt_link = st.text_input("Enter YouTube link:")
+
 # Initialize chat history
 if "messages" not in st.session_state:
     st.session_state.messages = []
@@ -24,7 +26,6 @@ for message in st.session_state.messages:
         st.markdown(message["content"])
 
 # Accept user input
-yt_link = st.text_input("Enter YouTube link:")
 if yt_link:
     documents = loader.load_data(ytlinks=[yt_link])
     index = GPTVectorStoreIndex(documents)
