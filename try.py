@@ -6,7 +6,7 @@ from llama_hub.youtube_transcript import YoutubeTranscriptReader
 st.title("ChatGPT-like clone")
 
 # Set OpenAI API key from Streamlit secrets
-openai.api_key = "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"
+openai.api_key = "API_KEY"
 
 # Load data and create index (replace this with your actual code)
 loader = YoutubeTranscriptReader()
