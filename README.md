@@ -4,6 +4,7 @@ Ever found yourself stuck watching a 20-minute YouTube video just to see if it h
 
 
 Here's a snippet of what the YouTube Genie looks like:
+
 ![YouTube Genie](chat_screenshot.png)
 
 
