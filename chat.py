@@ -3,15 +3,14 @@ import streamlit as st
 from llama_index import GPTVectorStoreIndex
 from llama_hub.youtube_transcript import YoutubeTranscriptReader
 
-st.title("ChatGPT-like clone")
+st.title("YouTube Genie")
 
-# Retrieve OpenAI API key from Streamlit secrets
-openai.api_key = st.secrets["OPENAI_API_KEY"]
+openai.api_key = "OPENAI_API_KEY"
 
 if "openai_model" not in st.session_state:
     st.session_state["openai_model"] = "gpt-3.5-turbo"
 
-# Load data and create index (replace this with your actual code)
+# Load data and create index
 loader = YoutubeTranscriptReader()
 
 yt_link = st.text_input("Enter YouTube link:")
