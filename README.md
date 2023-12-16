@@ -2,6 +2,9 @@
 
 Ever found yourself stuck watching a 20-minute YouTube video just to see if it has the answers you seek? What if I told you there's a shortcut to enlightenment? Welcome to YouTube Genie, your swift portal to unraveling the mysteries of YouTube without the video marathon.
 
+![YouTube Genie](chat_screenshot.png)
+
+
 ## Overview
 
 Tired of the endless quest for knowledge hidden in lengthy videos? Fear not! YouTube Genie is here to grant your wishes, minus the waiting and video-watching ordeal. No need to rub lamps or consult mystical beings—just enter a YouTube link and fire away with your questions.
