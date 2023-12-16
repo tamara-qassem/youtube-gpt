@@ -10,8 +10,6 @@ Here's a snippet of what the YouTube Genie looks like:
 </div>
 
 
-![YouTube Genie](chat_screenshot.png)
-
 
 ## Overview
 
