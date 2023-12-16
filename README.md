@@ -27,7 +27,7 @@ Why waste time watching entire videos when you can have a direct conversation wi
 3. **Replace the Placeholder:** Open the `chat.py` file and replace the placeholder `"OPENAI_API_KEY"` on line 8 with your actual OpenAI API key.
 
    ```python
-   openai.api_key = "YOUR_ACTUAL_API_KEY"  ```
+   openai.api_key = "YOUR_ACTUAL_API_KEY"
 
 3. **Summon the Genie:** Run the following command to invoke the Genie and unleash its magic:
 
