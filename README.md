@@ -22,7 +22,7 @@ Why waste time watching entire videos when you can have a direct conversation wi
 
 1. **Install the Magic:** Run the following command to set the enchantment in motion:
 
-       ```bash
+   ```bash
     pip install -r requirements.txt
     ```
 
