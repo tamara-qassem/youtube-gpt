@@ -20,7 +20,11 @@ Why waste time watching entire videos when you can have a direct conversation wi
 
 ## How to Use
 
-1. **Install the Magic:** Run `pip install -r requirements.txt` to set the enchantment in motion.
+1. **Install the Magic:** Run the following command to set the enchantment in motion:
+
+       ```bash
+    pip install -r requirements.txt
+    ```
 
 2. **Get Your API Key:** Visit [OpenAI's platform](https://platform.openai.com/signup), create an account, and obtain your API key.
 
@@ -29,15 +33,13 @@ Why waste time watching entire videos when you can have a direct conversation wi
    ```python
    openai.api_key = "YOUR_ACTUAL_API_KEY"
 
-3. **Summon the Genie:** Run the following command to invoke the Genie and unleash its magic:
+4. **Summon the Genie:** Run the following command to invoke the Genie and unleash its magic:
 
     ```bash
     streamlit run chat.py
     ```
 
-Pro tip: Keep your queries within 8192 characters for optimal magic.
-
-4. **Access the Magic Lamp:** A new browser window will appear with the YouTube Genie ready to grant your wishes. Enter a YouTube link, engage in conversation, and witness the magic unfold.
+5. **Access the Magic Lamp:** A new browser window will appear with the YouTube Genie ready to grant your wishes. Enter a YouTube link, engage in conversation, and witness the magic unfold.
 
 Get ready to reclaim your time and get instant answers with YouTube Genie! 🚀
 
